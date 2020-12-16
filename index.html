@@ -1,21 +1,50 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-    </head>
-    <body>
-        <header>
-            <p> hello world </p>
-        </header>
-        <main>
-    
-        </main>
-        <footer>
-    
-        </footer>
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <title>Les bières</title>
+</head>
+<body>
+<h1> Les bières</h1>
+<h2> Les bières deja mit: </h2>
+
+<h2> ajouter une bières</h2>
+<div>
+    <form id="formulaireAjoutBier"action=#> /*onSubmit='return ajouterPersonnage(this);'*\
+        <fieldset>
+            <legend>Création de votre bières</legend>
+            <label for="nom">Nom : </label>
+            <input id="nom" name="nom" type="text" value="" required> <br>
+
+            <label for="création">date de création: </label>
+            <input id="création" name="création" type="date" required> <br>
+
+            <label for="périmer">date de pérenption: </label>
+            <input id="périmer" name="périer" type="date" required> <br>
+
+            <input id="styleB" type="radio" name="style" value="bouteille" required>
+            <label for="styleB"> bouteille</label><br>
+            <input id="styleC" type="radio" name="style" value="canette" required>
+            <label for="styleC"> canette</label><br>
+
+            <label for="type">Type de bière : </label>
+            <select id="type" name="type" >
+                <option value="P" selected>Pilsner</option>
+                <option value="I">IPA</option>
+                <option value="T">Tripple</option>
+                <option value="L">Lager</option>
+                <option value="O">Porter</option>
+                <option value="S">Stout</option>
+                <option value="A">Lambic</option>
+                <option value="B">Bière d'abbaye</option>
+            </select><br>
+            <!-- age -->
+            <label for="alcool">taut d'alcool : </label>
+            <input id="alcool" name="alcool" type="number" min="0" max="15" step="1" required><br>
+            <!-- bouton -->
+            <input id="boutonValider" type="submit" value="Créer">
+        </fieldset>
+    </form>
+</div>
+</body>
 </html>
