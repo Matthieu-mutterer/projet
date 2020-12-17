@@ -11,14 +11,14 @@
 
 <h2> ajouter une bières</h2>
 <div>
-    <form id="formulaireAjoutBier"action=# onSubmit=return'ajouterBiere(this);'>
+    <form id="formulaireAjoutBier"action=# onSubmit='return ajouterBiere(this);'>
         <fieldset>
             <legend>Création de votre bières</legend>
             <label for="nom">Nom : </label>
             <input id="nom" name="nom" type="text" value="" required> <br>
 
-            <label for="création">date de création: </label>
-            <input id="création" name="création" type="date" required> <br>
+            <label for="creation">date de création: </label>
+            <input id="creation" name="creation" type="date" required> <br>
 
             <label for="perimer">date de pérenption: </label>
             <input id="perimer" name="perimer" type="date" required> <br>
@@ -39,7 +39,6 @@
                 <option value="A">Lambic</option>
                 <option value="B">Bière d'abbaye</option>
             </select><br>
-            <!-- age -->
             <label for="alcool">taut d'alcool : </label>
             <input id="alcool" name="alcool" type="number" min="0" max="15" step="1" required><br>
             <!-- bouton -->
