@@ -5,10 +5,12 @@
     <title>Les bières</title>
     <script src="js/index.js"></script>
 </head>
-<body>
+<body >
 <h1> Les bières</h1>
 <h2> Les bières deja mit: </h2>
+<div id="affiche" onsubmit="afficherLesBier(tab)">
 
+</div>
 <h2> ajouter une bières</h2>
 <div>
     <form id="formulaireAjoutBier"action=# onSubmit='return ajouterBiere(this);'>
@@ -17,16 +19,18 @@
             <label for="nom">Nom : </label>
             <input id="nom" name="nom" type="text" value="" required> <br>
 
+            <label for="ide">L'id de la bière : </label>
+            <input id="ide" name="ide" type="number" step="1" required><br>
+
             <label for="creation">date de création: </label>
             <input id="creation" name="creation" type="date" required> <br>
-
-            <label for="perimer">date de pérenption: </label>
-            <input id="perimer" name="perimer" type="date" required> <br>
 
             <input id="styleB" type="radio" name="style" value="bouteille" required>
             <label for="styleB"> bouteille</label><br>
             <input id="styleC" type="radio" name="style" value="canette" required>
             <label for="styleC"> canette</label><br>
+            <input id="styleF" type="radio" name="style" value="fût" required>
+            <label for="styleF"> fut</label><br>
 
             <label for="type">Type de bière : </label>
             <select id="type" name="type" >
@@ -40,9 +44,10 @@
                 <option value="B">Bière d'abbaye</option>
             </select><br>
             <label for="alcool">taut d'alcool : </label>
-            <input id="alcool" name="alcool" type="number" min="0" max="15" step="1" required><br>
-            <!-- bouton -->
+            <input id="alcool" name="alcool" type="number" min="0" max="15" step="0.1" required><br>
+
             <input id="boutonValider" type="submit" value="Créer">
+            <button id="boutonAfficher" type="button" onclick="afficherLesBier(tab);">Afficher</button>
         </fieldset>
     </form>
 </div>
